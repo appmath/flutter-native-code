@@ -26,7 +26,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int _batteryLevel = 0;
   Future<void> _getBatteryLevel() async {
     const platform = MethodChannel('course.flutter.dev/battery');
-    platform.invokeMethod('getBatterLevel')
+    platform.invokeMethod('getBatterLevel');
   }
 
   @override
